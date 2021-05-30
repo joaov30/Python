@@ -6,7 +6,7 @@ numero_secreto = 30
 contador = 3
 
 while (contador > 0):
-    print("Tentativas: ", contador)
+    print("Tentativas Restantes: ", contador)
     palpite_str = input("Digite o seu palpite: ")
     print("Você digitou ", palpite_str)
     palpite = int(palpite_str)
