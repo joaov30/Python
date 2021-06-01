@@ -4,9 +4,10 @@ print("******************************")
 
 numero_secreto = 30
 contador = 3
+rodada = 1
 
-while (contador > 0):
-    print("Tentativas Restantes: ", contador)
+while (rodada <= contador):
+    print("Tentativa {} de {}".format( rodada, contador))
     palpite_str = input("Digite o seu palpite: ")
     print("Você digitou ", palpite_str)
     palpite = int(palpite_str)
@@ -26,8 +27,8 @@ while (contador > 0):
         elif (menor):
             print("Seu palpite foi menor do que o numero secreto")
 
-    contador = contador -1
-    if contador == 0:
+    rodada = rodada + 1
+    if rodada > contador:
         print("*****************************************************")
         print("Você excedeu o numero de tentativas, tente mais tarde")
 
