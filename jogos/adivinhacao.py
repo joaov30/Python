@@ -31,9 +31,6 @@ for rodada in range(1, contador + 1):
         elif (menor):
             print("Seu palpite foi menor do que o numero secreto")
 
-
-    if rodada > contador:
-        print("*****************************************************")
-        print("Você excedeu o numero de tentativas, tente mais tarde")
+        print("Fim do jogo")
 
 
