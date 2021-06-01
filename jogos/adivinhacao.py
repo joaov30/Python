@@ -8,9 +8,13 @@ contador = 3
 
 for rodada in range(1, contador + 1):
     print("Tentativa {} de {}".format( rodada, contador))
-    palpite_str = input("Digite o seu palpite: ")
+    palpite_str = input("Digite o seu palpite entre 1 e 100: ")
     print("Você digitou ", palpite_str)
     palpite = int(palpite_str)
+
+    if(palpite < 1 or palpite > 100):
+        print("Você deve digitar um número entre 1 e 100!")
+        continue
 
     acertou = palpite == numero_secreto
     maior   = palpite  > numero_secreto
