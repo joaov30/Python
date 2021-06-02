@@ -1,9 +1,13 @@
+import random
+
 print("******************************")
 print("Bem vindo ao Jogo da advinhação")
 print("******************************")
 
-numero_secreto = 30
+numero_secreto = random.randrange(1, 101)
 contador = 3
+
+print(numero_secreto)
 
 
 for rodada in range(1, contador + 1):
@@ -31,6 +35,6 @@ for rodada in range(1, contador + 1):
         elif (menor):
             print("Seu palpite foi menor do que o numero secreto")
 
-        print("Fim do jogo")
+
 
 
